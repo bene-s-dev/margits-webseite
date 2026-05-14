@@ -3,235 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Margit | Contemporary Bakery Freiburg</title>
+    <title>Margit | Gesunde Backstube Freiburg Littenweiler</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        h1, h2, .font-display { font-family: 'Outfit', sans-serif; }
-        .glass-effect { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); }
-        .text-clay { color: #A47148; }
-        .bg-forest-deep { background-color: #0F1A17; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, .font-display { font-family: 'Space Grotesk', sans-serif; }
+        .glass-nav { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(20px); }
+        .bg-health-mint { background-color: #F2F9F6; }
     </style>
 </head>
-<body class="bg-[#FBFBF9] text-[#1A1A1A]">
+<body class="bg-[#FCFCFA] text-stone-900">
 
-    <!-- Minimalist Navigation -->
-    <nav class="fixed top-0 w-full z-50 border-b border-black/5 glass-effect">
-        <div class="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center">
-            <div class="flex items-center gap-12">
-                <div class="text-2xl font-extrabold tracking-tighter uppercase italic">Margit<span class="text-emerald-600">.</span></div>
-                <div class="hidden lg:flex space-x-8 text-[11px] font-bold uppercase tracking-[0.2em]">
-                    <a href="#shop" class="hover:opacity-50 transition">Shop</a>
-                    <a href="#abo" class="hover:opacity-50 transition">Circulary Abo</a>
-                    <a href="#" class="hover:opacity-50 transition">Raw Sourcing</a>
-                    <a href="#" class="hover:opacity-50 transition">Journal</a>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 border-b border-stone-100 glass-nav">
+        <div class="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-10">
+                <div class="text-2xl font-extrabold tracking-tighter uppercase italic">Margit<span class="text-emerald-500">.</span><span class="text-[10px] block font-medium tracking-[0.3em] -mt-2 opacity-60">Bewusst Genießen</span></div>
+                <div class="hidden lg:flex space-x-8 text-[11px] font-bold uppercase tracking-widest">
+                    <a href="#laden" class="hover:text-emerald-600 transition">Backstube</a>
+                    <a href="#fitness" class="hover:text-emerald-600 transition">Fitness-Konzept</a>
+                    <a href="#abo" class="hover:text-emerald-600 transition">Abo-Kiste</a>
                 </div>
             </div>
-            <div class="flex items-center gap-6">
-                <span class="text-[10px] font-bold uppercase tracking-widest hidden sm:block">Freiburg i. Br.</span>
-                <button class="bg-black text-white px-5 py-2 text-[10px] font-bold uppercase tracking-widest hover:bg-emerald-900 transition">Cart (0)</button>
+            <div class="flex items-center gap-4">
+                <div class="hidden md:block text-right mr-4 border-r pr-4 border-stone-200">
+                    <p class="text-[9px] uppercase font-bold text-stone-400">Standort: Littenweiler</p>
+                    <p class="text-xs font-bold text-emerald-700">Zuckerfrei & Proteinreich</p>
+                </div>
+                <button class="bg-emerald-900 text-white px-6 py-2.5 text-[10px] font-bold uppercase tracking-widest rounded-full hover:bg-black transition">Warenkorb (0)</button>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section: Urban & Clean -->
-    <header class="pt-32 pb-20 px-8">
-        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+    <!-- Hero Bereich -->
+    <header class="pt-40 pb-20 px-8 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
             <div>
-                <div class="inline-flex items-center gap-3 mb-6">
-                    <span class="w-10 h-[1px] bg-black"></span>
-                    <span class="text-[10px] font-extrabold uppercase tracking-[0.4em]">Black Forest Modernism</span>
+                <div class="inline-block px-3 py-1 bg-emerald-100 text-emerald-800 text-[10px] font-bold uppercase tracking-widest rounded-sm mb-6">
+                    Handwerk aus Freiburg Littenweiler
                 </div>
                 <h1 class="text-6xl md:text-8xl font-bold tracking-tighter leading-[0.9] mb-8">
-                    Brot für die <br><span class="text-emerald-800">neue Stadt.</span>
+                    Starkes Gebäck. <br><span class="text-emerald-600 italic">Null Zucker.</span>
                 </h1>
                 <p class="text-lg text-stone-500 max-w-md leading-relaxed mb-10 font-light">
-                    Wir interpretieren regionale Urgetreide neu. In Freiburg verwurzelt, für eine bewusste Welt gebacken. 100% Organic. Zero Waste.
+                    In Littenweiler gebacken, für deine Bestform gemacht. Wir nutzen die Kraft von Birkenzucker und hochwertigen Proteinen – regional, gesund und weltoffen.
                 </p>
-                <div class="flex gap-4">
-                    <button class="bg-forest-deep text-white px-8 py-4 text-xs font-bold uppercase tracking-widest hover:scale-105 transition duration-300">Entdecken</button>
-                    <button class="border border-black px-8 py-4 text-xs font-bold uppercase tracking-widest hover:bg-black hover:text-white transition duration-300">Das Abo</button>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#laden" class="bg-black text-white px-10 py-5 text-xs font-bold uppercase tracking-widest rounded-full hover:bg-emerald-900 transition shadow-lg">Zum Sortiment</a>
+                    <a href="#fitness" class="border border-stone-200 px-10 py-5 text-xs font-bold uppercase tracking-widest rounded-full hover:bg-stone-50 transition">Warum zuckerfrei?</a>
                 </div>
             </div>
             <div class="relative">
-                <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&q=80&w=1200" 
-                     alt="Modern Bakery" class="w-full aspect-[4/5] object-cover rounded-sm grayscale-[0.2] hover:grayscale-0 transition duration-700">
-                <div class="absolute -bottom-6 -left-6 bg-emerald-900 text-white p-8 hidden md:block">
-                    <p class="text-3xl font-display font-bold italic">79115</p>
-                    <p class="text-[10px] uppercase tracking-widest opacity-70">Local Hub Freiburg</p>
-                </div>
+                <div class="absolute -top-10 -right-10 w-64 h-64 bg-emerald-100 rounded-full blur-3xl opacity-40"></div>
+                <img src="https://images.unsplash.com/photo-1535141104552-61054a001952?auto=format&fit=crop&q=80&w=1200" 
+                     alt="Gesunde Muffins" class="w-full aspect-[4/5] object-cover rounded-[2rem] shadow-2xl relative z-10">
             </div>
         </div>
     </header>
 
-    <!-- Features -->
-    <section class="border-y border-black/5 bg-white">
-        <div class="max-w-7xl mx-auto py-16 px-8 grid md:grid-cols-3 gap-12">
-            <div>
-                <h4 class="text-xs font-bold uppercase tracking-widest mb-4 italic">Radical Local</h4>
-                <p class="text-sm text-stone-500">Unser Getreide wächst im Umkreis von 40km. Wir kennen jeden Acker im Breisgau persönlich.</p>
+    <!-- Werte-Sektion -->
+    <section class="max-w-7xl mx-auto px-8 py-12">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-y border-stone-100 py-12">
+            <div class="text-center">
+                <p class="text-3xl font-display font-bold">0%</p>
+                <p class="text-[10px] uppercase tracking-widest text-stone-400 mt-2 font-bold">Industriezucker</p>
             </div>
-            <div>
-                <h4 class="text-xs font-bold uppercase tracking-widest mb-4 italic">Slow Fermented</h4>
-                <p class="text-sm text-stone-500">Zeit ist unsere wichtigste Zutat. 48h Teigführung für maximale Bekömmlichkeit.</p>
+            <div class="text-center">
+                <p class="text-3xl font-display font-bold">Regio</p>
+                <p class="text-[10px] uppercase tracking-widest text-stone-400 mt-2 font-bold">Freiburg Fokus</p>
             </div>
-            <div>
-                <h4 class="text-xs font-bold uppercase tracking-widest mb-4 italic">Circular Concept</h4>
-                <p class="text-sm text-stone-500">Vom Feld in den Ofen und per Lastenrad direkt vor deine Haustür – plastikfrei.</p>
+            <div class="text-center">
+                <p class="text-3xl font-display font-bold">100%</p>
+                <p class="text-[10px] uppercase tracking-widest text-stone-400 mt-2 font-bold">Natürliches Xylit</p>
+            </div>
+            <div class="text-center">
+                <p class="text-3xl font-display font-bold">Aktiv</p>
+                <p class="text-[10px] uppercase tracking-widest text-stone-400 mt-2 font-bold">Für Sportler</p>
             </div>
         </div>
     </section>
 
-    <!-- Curated Shop -->
-    <section id="shop" class="max-w-7xl mx-auto px-8 py-24">
+    <!-- Produkt-Liste -->
+    <section id="laden" class="max-w-7xl mx-auto px-8 py-24">
         <div class="flex flex-col md:flex-row justify-between items-baseline mb-16 gap-4">
-            <h2 class="text-4xl font-bold tracking-tight">Today's Batch.</h2>
-            <p class="text-xs font-bold uppercase tracking-widest text-emerald-700">Live aus der Backstube: Freiburg Littenweiler</p>
+            <h2 class="text-4xl font-bold tracking-tight italic">Heutige Backstube.</h2>
+            <p class="text-xs font-bold uppercase tracking-widest text-emerald-700">Lörracher Str. / Littenweiler • Täglich Frisch</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <!-- Item 1 -->
-            <div class="group cursor-pointer">
-                <div class="relative aspect-square mb-6 overflow-hidden bg-stone-100">
-                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&q=80&w=800" 
-                         class="w-full h-full object-cover mix-blend-multiply opacity-90 group-hover:scale-110 transition duration-1000">
-                    <button class="absolute bottom-4 left-4 right-4 bg-white py-3 text-[10px] font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">Quick Add +</button>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+            <!-- Produkt 1 -->
+            <div class="group">
+                <div class="relative aspect-square mb-8 overflow-hidden rounded-3xl bg-stone-100">
+                    <img src="https://images.unsplash.com/photo-1624451940605-2781115d651a?auto=format&fit=crop&q=80&w=800" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    <div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md py-3 rounded-xl text-[10px] font-bold uppercase text-center tracking-widest opacity-0 group-hover:opacity-100 transition-all">In den Beutel +</div>
                 </div>
                 <div class="flex justify-between items-start">
                     <div>
-                        <h3 class="font-bold text-sm uppercase tracking-tight">Grey Mountain Sourdough</h3>
-                        <p class="text-xs text-stone-400 mt-1 italic text-emerald-800">Roggen & Alpenkräuter</p>
+                        <h3 class="font-bold text-xl tracking-tight">Heidelbeer Protein-Muffin</h3>
+                        <p class="text-xs text-stone-400 mt-1 italic">Gesüßt mit Birkenzucker aus dem Norden</p>
                     </div>
-                    <span class="text-sm font-light">6.50</span>
+                    <span class="font-bold text-lg">3,90 €</span>
                 </div>
             </div>
 
-            <!-- Item 2 -->
-            <div class="group cursor-pointer">
-                <div class="relative aspect-square mb-6 overflow-hidden bg-stone-100">
-                    <img src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?auto=format&fit=crop&q=80&w=800" 
-                         class="w-full h-full object-cover mix-blend-multiply opacity-90 group-hover:scale-110 transition duration-1000">
-                    <button class="absolute bottom-4 left-4 right-4 bg-white py-3 text-[10px] font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">Quick Add +</button>
+            <!-- Produkt 2 -->
+            <div class="group">
+                <div class="relative aspect-square mb-8 overflow-hidden rounded-3xl bg-stone-100">
+                    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&q=80&w=800" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    <div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md py-3 rounded-xl text-[10px] font-bold uppercase text-center tracking-widest opacity-0 group-hover:opacity-100 transition-all">In den Beutel +</div>
                 </div>
                 <div class="flex justify-between items-start">
                     <div>
-                        <h3 class="font-bold text-sm uppercase tracking-tight">Pure Spelt #01</h3>
-                        <p class="text-xs text-stone-400 mt-1 italic text-emerald-800">100% Oberkulmer Rotkorn</p>
+                        <h3 class="font-bold text-xl tracking-tight">Dunkler Fitness-Kuchen</h3>
+                        <p class="text-xs text-stone-400 mt-1 italic">70% Kakao, Erythrit & viel Energie</p>
                     </div>
-                    <span class="text-sm font-light">5.80</span>
+                    <span class="font-bold text-lg">4,50 €</span>
                 </div>
             </div>
 
-            <!-- Item 3 -->
-            <div class="group cursor-pointer">
-                <div class="relative aspect-square mb-6 overflow-hidden bg-stone-100">
-                    <img src="https://images.unsplash.com/photo-1534620808146-d33bb39128b2?auto=format&fit=crop&q=80&w=800" 
-                         class="w-full h-full object-cover mix-blend-multiply opacity-90 group-hover:scale-110 transition duration-1000">
-                    <button class="absolute bottom-4 left-4 right-4 bg-white py-3 text-[10px] font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">Quick Add +</button>
+            <!-- Produkt 3 -->
+            <div class="group">
+                <div class="relative aspect-square mb-8 overflow-hidden rounded-3xl bg-stone-100">
+                    <img src="https://images.unsplash.com/photo-1558961309-62236c20f4a1?auto=format&fit=crop&q=80&w=800" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    <div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md py-3 rounded-xl text-[10px] font-bold uppercase text-center tracking-widest opacity-0 group-hover:opacity-100 transition-all">In den Beutel +</div>
                 </div>
                 <div class="flex justify-between items-start">
                     <div>
-                        <h3 class="font-bold text-sm uppercase tracking-tight">Black Forest Croissant</h3>
-                        <p class="text-xs text-stone-400 mt-1 italic text-emerald-800">Mit Fichtenspitz-Zucker</p>
+                        <h3 class="font-bold text-xl tracking-tight">Mandel-Zitronen Kekse</h3>
+                        <p class="text-xs text-stone-400 mt-1 italic">Getreidefrei & Low-Carb optimiert</p>
                     </div>
-                    <span class="text-sm font-light">3.20</span>
-                </div>
-            </div>
-
-            <!-- Item 4 -->
-            <div class="group cursor-pointer">
-                <div class="relative aspect-square mb-6 overflow-hidden bg-stone-100 border border-black/5 flex items-center justify-center">
-                    <div class="text-center p-6">
-                        <p class="text-[10px] font-bold uppercase tracking-widest mb-2">Next Season</p>
-                        <p class="text-lg font-serif italic text-stone-400">Walnuss-Einkorn</p>
-                    </div>
-                </div>
-                <div class="flex justify-between items-start opacity-40">
-                    <h3 class="font-bold text-sm uppercase tracking-tight">Coming Soon</h3>
-                    <span class="text-sm">--</span>
+                    <span class="font-bold text-lg">2,80 €</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Subscription Section: Editorial Style -->
-    <section id="abo" class="bg-forest-deep text-white py-32 px-8 overflow-hidden relative">
-        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-center">
-            <div class="lg:col-span-7">
-                <h2 class="text-5xl md:text-7xl font-bold tracking-tighter mb-10 leading-tight">
-                    Das <span class="text-emerald-500 italic font-light font-display text-4xl md:text-6xl">Circulary</span> <br>Brot-Abo.
-                </h2>
-                <div class="space-y-12">
-                    <div class="max-w-md">
-                        <p class="text-emerald-100/60 mb-4 uppercase text-[10px] font-bold tracking-widest">Die Idee</p>
-                        <p class="text-lg leading-relaxed">Keine Auswahl-Stress mehr. Wir liefern dir wöchentlich die kuratierte Auswahl unserer besten Backwaren. Pünktlich per Lastenrad, pünktlich zum Frühstück.</p>
+    <!-- Fitness-Sektion -->
+    <section id="fitness" class="bg-stone-900 text-white py-32 px-8">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-16 items-center">
+            <div class="lg:col-span-5">
+                <h2 class="text-5xl font-bold tracking-tighter mb-8 italic text-emerald-400">Leistung braucht <br>echte Zutaten.</h2>
+                <p class="text-stone-400 text-lg mb-10 font-light leading-relaxed">
+                    Wir glauben, dass Gesundheit im Schwarzwald-Vorland beginnt. Unsere Backwaren verursachen keinen Heißhunger, da sie deinen Blutzuckerspiegel stabil halten. Perfekt für die Radtour zum Schauinsland oder nach dem Training im Freiburger Osten.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <span class="w-2 h-2 bg-emerald-500 rounded-full"></span>
+                        <span class="text-sm font-bold uppercase tracking-widest">Keine versteckten Zusätze</span>
                     </div>
-                    <div class="grid grid-cols-2 gap-8 border-t border-white/10 pt-8">
-                        <div>
-                            <p class="text-3xl font-display font-bold">0%</p>
-                            <p class="text-[10px] uppercase tracking-widest text-emerald-400 mt-1">Verpackungsmüll</p>
-                        </div>
-                        <div>
-                            <p class="text-3xl font-display font-bold">100%</p>
-                            <p class="text-[10px] uppercase tracking-widest text-emerald-400 mt-1">Freiburg Fokus</p>
-                        </div>
+                    <div class="flex items-center gap-3">
+                        <span class="w-2 h-2 bg-emerald-500 rounded-full"></span>
+                        <span class="text-sm font-bold uppercase tracking-widest">Voller Geschmack aus Littenweiler</span>
                     </div>
                 </div>
             </div>
-            <div class="lg:col-span-5 bg-white text-black p-12 rounded-sm shadow-2xl">
-                <p class="text-xs font-bold uppercase tracking-widest mb-2 text-stone-400">Weekly Plan</p>
-                <h3 class="text-3xl font-bold mb-8 tracking-tight">Urban Nomad Box</h3>
-                <ul class="space-y-4 text-sm mb-12 border-b border-stone-100 pb-8">
-                    <li class="flex justify-between"><span>1x Sourdough of the week</span> <span class="font-bold">Inc.</span></li>
-                    <li class="flex justify-between"><span>4x Curated Pastries</span> <span class="font-bold">Inc.</span></li>
-                    <li class="flex justify-between"><span>Lastenrad Delivery (FR)</span> <span class="font-bold">Free</span></li>
-                </ul>
-                <div class="flex justify-between items-center mb-10">
-                    <span class="text-2xl font-bold">17.50 €</span>
-                    <span class="text-[10px] uppercase font-bold tracking-widest opacity-50">per week</span>
+            <div class="lg:col-span-7 grid grid-cols-2 gap-4">
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&q=80&w=800" class="rounded-2xl grayscale hover:grayscale-0 transition duration-700 aspect-video object-cover col-span-2">
+                <div class="bg-emerald-900 p-8 rounded-2xl flex flex-col justify-end">
+                    <p class="text-2xl font-bold italic">Power-Snack</p>
+                    <p class="text-[10px] uppercase mt-2 opacity-60">Nach dem Sport</p>
                 </div>
-                <button class="w-full bg-emerald-900 text-white py-5 text-[10px] font-bold uppercase tracking-widest hover:bg-black transition duration-300">Join the Circle</button>
+                <div class="bg-stone-800 p-8 rounded-2xl flex flex-col justify-end">
+                    <p class="text-2xl font-bold italic">0% Reue</p>
+                    <p class="text-[10px] uppercase mt-2 opacity-60">Zum Kaffee</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Abo-Sektion -->
+    <section id="abo" class="py-32 px-8 bg-emerald-50">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-5xl font-bold tracking-tight mb-6">Deine gesunde Wochen-Box.</h2>
+            <p class="text-stone-600 mb-12 text-lg">Frisch gebackene, zuckerfreie Snacks im Abo. Geliefert per Lastenrad in ganz Littenweiler und Umgebung.</p>
+            
+            <div class="grid md:grid-cols-2 gap-8 text-left">
+                <div class="bg-white p-10 rounded-3xl shadow-sm border border-emerald-100">
+                    <h4 class="text-xl font-bold mb-2 italic">Sportler-Paket</h4>
+                    <p class="text-sm text-stone-400 mb-6">Fokus auf Protein & Energie</p>
+                    <p class="text-3xl font-bold mb-8">24,90 € <span class="text-xs font-normal text-stone-400">/ Woche</span></p>
+                    <button class="w-full py-4 bg-black text-white rounded-xl font-bold uppercase text-[10px] tracking-widest">Jetzt abonnieren</button>
+                </div>
+                <div class="bg-white p-10 rounded-3xl shadow-sm border border-emerald-100">
+                    <h4 class="text-xl font-bold mb-2 italic">Genießer-Box</h4>
+                    <p class="text-sm text-stone-400 mb-6">Zuckerfrei durch den Alltag</p>
+                    <p class="text-3xl font-bold mb-8">19,90 € <span class="text-xs font-normal text-stone-400">/ Woche</span></p>
+                    <button class="w-full py-4 border border-black text-black rounded-xl font-bold uppercase text-[10px] tracking-widest hover:bg-black hover:text-white transition">Jetzt abonnieren</button>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-20 px-8 bg-[#FBFBF9] border-t border-black/5">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-16">
+    <footer class="py-20 px-8 bg-white border-t border-stone-100">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 text-center md:text-left">
             <div>
-                <div class="text-4xl font-extrabold tracking-tighter uppercase italic mb-6">Margit<span class="text-emerald-600">.</span></div>
+                <div class="text-3xl font-extrabold tracking-tighter uppercase italic mb-4">Margit<span class="text-emerald-500">.</span></div>
                 <p class="text-xs text-stone-400 uppercase tracking-widest leading-loose">
-                    Bakery & Lab<br>
-                    Adresse noch nicht veröffentlicht<br>
-                    79XXX Freiburg
+                    Gesunde Backstube Freiburg<br>
+                    Lörracher Str. 12<br>
+                    79117 Freiburg Littenweiler
                 </p>
             </div>
-            <div class="grid grid-cols-2 gap-20">
-                <div>
-                    <h5 class="text-[10px] font-bold uppercase tracking-[0.2em] mb-6">Connect</h5>
-                    <ul class="text-sm space-y-3 font-medium">
-                        <li><a href="#" class="hover:text-emerald-700">Instagram</a></li>
-                        <li><a href="#" class="hover:text-emerald-700">Journal</a></li>
-                        <li><a href="#" class="hover:text-emerald-700">Freiburg Markets</a></li>
-                    </ul>
+            <div class="flex gap-20 mx-auto md:mx-0">
+                <div class="space-y-4">
+                    <p class="text-[10px] font-bold uppercase tracking-widest text-stone-300">Kontakt</p>
+                    <a href="#" class="block text-sm font-bold hover:text-emerald-600 transition">Nachricht</a>
+                    <a href="#" class="block text-sm font-bold hover:text-emerald-600 transition">Instagram</a>
                 </div>
-                <div>
-                    <h5 class="text-[10px] font-bold uppercase tracking-[0.2em] mb-6">Info</h5>
-                    <ul class="text-sm space-y-3 font-medium">
-                        <li><a href="#" class="hover:text-emerald-700">Sustainability</a></li>
-                        <li><a href="#" class="hover:text-emerald-700">Shipping</a></li>
-                        <li><a href="#" class="hover:text-emerald-700">Terms</a></li>
-                    </ul>
+                <div class="space-y-4">
+                    <p class="text-[10px] font-bold uppercase tracking-widest text-stone-300">Rechtliches</p>
+                    <a href="#" class="block text-sm font-bold hover:text-emerald-600 transition">Impressum</a>
+                    <a href="#" class="block text-sm font-bold hover:text-emerald-600 transition">Datenschutz</a>
                 </div>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-black/5 flex justify-between items-center">
-            <span class="text-[9px] uppercase tracking-widest font-bold opacity-30">&copy; 2026 Margit Contemporary Bakery</span>
-            <span class="text-[9px] uppercase tracking-widest font-bold opacity-30 italic">Handcrafted in Black Forest Foothills</span>
+        <div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-stone-50 text-center">
+            <p class="text-[9px] uppercase tracking-[0.4em] font-bold opacity-30">&copy; 2026 Margit | Gebacken im Freiburger Osten</p>
         </div>
     </footer>
 
 </body>
 </html>
-
